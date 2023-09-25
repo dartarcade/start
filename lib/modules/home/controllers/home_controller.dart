@@ -1,4 +1,4 @@
-import 'package:dartseid/dartseid.dart';
+import 'package:arcade/arcade.dart';
 import 'package:injectable/injectable.dart';
 import 'package:start/modules/home/services/home_service.dart';
 

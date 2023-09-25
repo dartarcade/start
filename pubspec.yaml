@@ -1,12 +1,12 @@
 name: start
-description: Starter Dartseid application using recommended code generation libraries
+description: Starter Arcade application using recommended code generation libraries
 version: 1.0.0
 
 environment:
   sdk: ^3.0.6
 
 dependencies:
-  dartseid: ^0.0.10
+  arcade: ^0.1.0+1
   envied: ^0.3.0+3
   get_it: ^7.6.0
   injectable: ^2.1.2

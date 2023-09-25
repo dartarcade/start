@@ -1,4 +1,4 @@
-import 'package:dartseid/dartseid.dart';
+import 'package:arcade/arcade.dart';
 import 'package:start/core/env.dart';
 import 'package:start/core/init.dart';
 
