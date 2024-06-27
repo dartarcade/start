@@ -5,3 +5,4 @@
 
 lib/**/*.g.dart
 lib/**/*.config.dart
+.DS_Store
