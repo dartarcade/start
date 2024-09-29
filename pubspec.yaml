@@ -3,10 +3,10 @@ description: Starter Arcade application using recommended code generation librar
 version: 1.0.0
 
 environment:
-  sdk: ^3.0.6
+  sdk: ">=3.5.0 <4.0.0"
 
 dependencies:
-  arcade: ^0.1.2
+  arcade: ^0.1.4+2
   envied: ^0.5.2
   get_it: ^7.7.0
   injectable: ^2.4.2
