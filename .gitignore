@@ -2,6 +2,7 @@
 # Created by `dart pub`
 .dart_tool/
 .idea
+.env
 
 lib/**/*.g.dart
 lib/**/*.config.dart
