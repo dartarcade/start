@@ -7,8 +7,8 @@ class HomeController {
   final HomeService _homeService;
 
   HomeController(this._homeService) {
-    Route.get('/').handle(sayHello);
-    Route.get('/:name').handle(greet);
+    route.get('/').handle(sayHello);
+    route.get('/:name').handle(greet);
   }
 
   Future<String> sayHello(RequestContext context) async {

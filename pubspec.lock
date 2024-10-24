@@ -34,10 +34,10 @@ packages:
     dependency: "direct main"
     description:
       name: arcade
-      sha256: fc6616dc808930542ebeb63cea9514b5e5d76d7f7838ebf2c64ad16af0f82d1f
+      sha256: "185de3c3fdbdd6c145a52655fcd36341e8c8a08c1a5eb6f69b669fbb4ebcaf71"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.4+2"
+    version: "0.2.1"
   arcade_config:
     dependency: transitive
     description:
@@ -114,10 +114,10 @@ packages:
     dependency: "direct dev"
     description:
       name: build_runner
-      sha256: dd09dd4e2b078992f42aac7f1a622f01882a8492fef08486b27ddde929c19f04
+      sha256: "028819cfb90051c6b5440c7e574d1896f8037e3c96cf17aaeb054c9311cfbf4d"
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.12"
+    version: "2.4.13"
   build_runner_core:
     dependency: transitive
     description:
@@ -242,10 +242,10 @@ packages:
     dependency: "direct main"
     description:
       name: get_it
-      sha256: d85128a5dae4ea777324730dc65edd9c9f43155c109d5cc0a69cab74139fbac1
+      sha256: "35c253f83f9e03cbac65ffa159510e41ae15f49b37291ab8c522d7a0b6f330cd"
       url: "https://pub.dev"
     source: hosted
-    version: "7.7.0"
+    version: "8.0.1"
   glob:
     dependency: transitive
     description:
@@ -282,10 +282,10 @@ packages:
     dependency: "direct main"
     description:
       name: injectable
-      sha256: "69874ba3ec10e3a0de3f519a184442878291d928f3299d718813f24642585198"
+      sha256: "5e1556ea1d374fe44cbe846414d9bab346285d3d8a1da5877c01ad0774006068"
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.4"
+    version: "2.5.0"
   injectable_generator:
     dependency: "direct dev"
     description:
