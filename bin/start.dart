@@ -1,12 +1,19 @@
+import 'dart:io';
+
 import 'package:arcade/arcade.dart';
 import 'package:start/core/env.dart';
 import 'package:start/core/init.dart';
 
-Future<void> main() async {
-  const dev = !bool.fromEnvironment('dart.vm.product');
+Future<void> main(List<String> arguments) {
+  final portFromEnvironment = Platform.environment['PORT'];
+  var port = Env.port;
+  if (portFromEnvironment != null) {
+    port = int.parse(portFromEnvironment);
+  }
+
   return runServer(
-    port: Env.port,
+    port: port,
     init: init,
-    logLevel: dev ? LogLevel.info : LogLevel.error,
+    closeServerAfterRoutesSetUp: arguments.contains('--export-routes'),
   );
 }

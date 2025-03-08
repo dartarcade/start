@@ -3,7 +3,7 @@
 .dart_tool/
 .idea
 .env
-
+.vscode
 lib/**/*.config.dart
 lib/**/*.freezed.dart
 lib/**/*.g.dart

@@ -6,7 +6,7 @@ part 'greet.g.dart';
 
 @luthor
 @freezed
-class GreetRequest with _$GreetRequest {
+abstract class GreetRequest with _$GreetRequest {
   const factory GreetRequest({
     @HasMin(1) required String name,
   }) = _GreetRequest;
@@ -16,7 +16,7 @@ class GreetRequest with _$GreetRequest {
 }
 
 @freezed
-class GreetResponse with _$GreetResponse {
+abstract class GreetResponse with _$GreetResponse {
   const factory GreetResponse({
     required String message,
   }) = _GreetResponse;
