@@ -6,7 +6,7 @@ environment:
   sdk: ">=3.5.0 <4.0.0"
 
 dependencies:
-  arcade: ^0.3.0
+  arcade: ^0.3.1
   envied: ^1.1.1
   freezed_annotation: ^3.0.0
   get_it: ^8.0.3

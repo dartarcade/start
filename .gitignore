@@ -9,3 +9,5 @@ lib/**/*.freezed.dart
 lib/**/*.g.dart
 
 .DS_Store
+.asdf
+.tool-versions
