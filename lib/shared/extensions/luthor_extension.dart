@@ -6,7 +6,7 @@ typedef SchemaValidationResultMapper<T> = SchemaValidationResult<T> Function(
 );
 
 extension LuthorExtension<T> on SchemaValidationResultMapper<T> {
-  Future<T> withLuthor(RequestContext context) async {
+  Future<T> withContext(RequestContext context) async {
     final body = switch (await context.jsonMap()) {
       BodyParseSuccess(value: final value) => value,
       BodyParseFailure(error: final error) =>

@@ -3,5 +3,6 @@ include: package:lint/analysis_options.yaml
 analyzer:
   exclude:
     - "**/*.config.dart"
+    - "**/*.drift.dart"
     - "**/*.freezed.dart"
     - "**/*.g.dart"

@@ -1,0 +1,13 @@
+scripts:
+  docker: docker compose up
+  dev: arcade serve
+
+  clean: dart run build_runner clean
+  build: dart run build_runner build -d
+  watch: dart run build_runner watch -d
+  clean:build: |
+    dpk run clean
+    dpk run build
+  clean:watch: |
+    dpk run clean
+    dpk run watch
