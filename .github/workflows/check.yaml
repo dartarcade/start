@@ -57,6 +57,10 @@ jobs:
         shell: bash
         run: dart pub get
 
+      - name: Copy .env.example to .env
+        shell: bash
+        run: cp .env.example .env
+
       - name: Run build
         shell: bash
         run: dpk run build
