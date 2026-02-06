@@ -57,6 +57,10 @@ jobs:
         shell: bash
         run: dart pub get
 
+      - name: Run build
+        shell: bash
+        run: dpk run build
+
       - name: Run analyze
         shell: bash
         run: dpk run ci:analyze
