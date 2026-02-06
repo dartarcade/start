@@ -35,9 +35,7 @@ class TodoController {
               summary: 'Create a todo',
               description: 'Create a todo',
               request: $CreateTodoRequestSchema,
-              responses: {
-                '201': $$TodoDataResponseSchema,
-              },
+              responses: {'201': $$TodoDataResponseSchema},
             )
             .post('/')
             .handle(createTodo);
@@ -47,10 +45,7 @@ class TodoController {
               summary: 'Mark a todo as done',
               description: 'Mark a todo as done',
               parameters: const [
-                Parameter.path(
-                  name: 'id',
-                  description: 'The id of the todo',
-                ),
+                Parameter.path(name: 'id', description: 'The id of the todo'),
               ],
             )
             .put('/:id/complete')
@@ -61,10 +56,7 @@ class TodoController {
               summary: 'Mark a todo as not done',
               description: 'Mark a todo as not done',
               parameters: const [
-                Parameter.path(
-                  name: 'id',
-                  description: 'The id of the todo',
-                ),
+                Parameter.path(name: 'id', description: 'The id of the todo'),
               ],
             )
             .put('/:id/incomplete')
@@ -75,10 +67,7 @@ class TodoController {
               summary: 'Delete a todo',
               description: 'Delete a todo',
               parameters: const [
-                Parameter.path(
-                  name: 'id',
-                  description: 'The id of the todo',
-                ),
+                Parameter.path(name: 'id', description: 'The id of the todo'),
               ],
             )
             .delete('/:id')
@@ -88,9 +77,9 @@ class TodoController {
   }
 
   Future<List<TodoDataResponse>> getTodos(RequestContext context) {
-    return todoService
-        .getTodos()
-        .then((todos) => todos.map((todo) => todo.toTodoDataResponse).toList());
+    return todoService.getTodos().then(
+      (todos) => todos.map((todo) => todo.toTodoDataResponse).toList(),
+    );
   }
 
   Future<TodoDataResponse> createTodo(RequestContext context) async {

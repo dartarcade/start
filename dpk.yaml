@@ -1,3 +1,5 @@
+version: ^0.6.5
+
 scripts:
   docker: docker compose up
   dev: arcade serve
@@ -11,3 +13,9 @@ scripts:
   clean:watch: |
     dpk run clean
     dpk run watch
+
+  fix: dart fix --apply
+  format: dart format .
+
+  ci:format: dart format . --set-exit-if-changed
+  ci:analyze: dart analyze . --fatal-infos --fatal-warnings
