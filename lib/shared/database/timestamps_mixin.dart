@@ -9,11 +9,13 @@ mixin TimestampsMixin on Table {
   @mustBeOverridden
   String get tableName;
 
-  late final createdAt = customType(PgTypes.timestampWithTimezone)
-      .withDefault(const FunctionCallExpression('now', []))();
+  late final createdAt = customType(
+    PgTypes.timestampWithTimezone,
+  ).withDefault(const FunctionCallExpression('now', []))();
 
-  late final updatedAt = customType(PgTypes.timestampWithTimezone)
-      .withDefault(const FunctionCallExpression('now', []))();
+  late final updatedAt = customType(
+    PgTypes.timestampWithTimezone,
+  ).withDefault(const FunctionCallExpression('now', []))();
 
   String generateUpdateAtTrigger() {
     return '''

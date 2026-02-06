@@ -5,9 +5,7 @@ part 'success_response.g.dart';
 
 @freezed
 abstract class SuccessResponse with _$SuccessResponse {
-  const factory SuccessResponse({
-    required String message,
-  }) = _SuccessResponse;
+  const factory SuccessResponse({required String message}) = _SuccessResponse;
 
   factory SuccessResponse.fromJson(Map<String, dynamic> json) =>
       _$SuccessResponseFromJson(json);

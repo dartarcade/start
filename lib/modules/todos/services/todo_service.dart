@@ -44,9 +44,7 @@ class TodoService {
 
   Future<void> deleteTodo(String id) {
     return _todoRepository.deleteTodo(
-      TodosTableCompanion(
-        id: Value(UuidValue.fromString(id)),
-      ),
+      TodosTableCompanion(id: Value(UuidValue.fromString(id))),
     );
   }
 }

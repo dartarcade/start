@@ -25,13 +25,8 @@ class Database extends $Database {
   );
 
   static QueryExecutor _openConnection() {
-    final Uri(
-      :host,
-      :userInfo,
-      :port,
-      :pathSegments,
-      :queryParameters,
-    ) = Uri.parse(Env.databaseUrl);
+    final Uri(:host, :userInfo, :port, :pathSegments, :queryParameters) =
+        Uri.parse(Env.databaseUrl);
     final [username, password] = userInfo.split(':');
     final sslModeString = queryParameters['sslmode'] ?? 'disable';
 
